@@ -1,0 +1,31 @@
+﻿
+@page "/event"
+
+@using Radzen
+@using Microsoft.Maui.Graphics
+
+<link rel="stylesheet" href="~/@(nameof(musei)).styles.css" />
+
+@code {
+    [Parameter]
+    public string EventName { get; set; }
+
+    [Parameter]
+    public string MuseumName { get; set; }
+
+    [Parameter]
+    public string Date { get; set; }
+
+    [Parameter]
+    public string Time { get; set; }
+
+    [Parameter]
+    public string Body { get; set; }
+
+    [Parameter]
+    public string ImagePath { get; set; }
+
+    [Parameter]
+    public string Photo { get; set; }
+
+}
